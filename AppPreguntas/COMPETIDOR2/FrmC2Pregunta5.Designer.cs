@@ -243,7 +243,7 @@ namespace AppPreguntas.COMPETIDOR2
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(332, 176);
+            this.label12.Location = new System.Drawing.Point(332, 169);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 33);
             this.label12.TabIndex = 34;
@@ -290,12 +290,12 @@ namespace AppPreguntas.COMPETIDOR2
             this.rdbRespuesta4.AutoSize = true;
             this.rdbRespuesta4.Font = new System.Drawing.Font("Arial Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdbRespuesta4.ForeColor = System.Drawing.Color.White;
-            this.rdbRespuesta4.Location = new System.Drawing.Point(395, 174);
+            this.rdbRespuesta4.Location = new System.Drawing.Point(395, 169);
             this.rdbRespuesta4.Name = "rdbRespuesta4";
-            this.rdbRespuesta4.Size = new System.Drawing.Size(108, 37);
+            this.rdbRespuesta4.Size = new System.Drawing.Size(166, 37);
             this.rdbRespuesta4.TabIndex = 30;
             this.rdbRespuesta4.TabStop = true;
-            this.rdbRespuesta4.Text = "5,000";
+            this.rdbRespuesta4.Text = "4 Angeles";
             this.rdbRespuesta4.UseVisualStyleBackColor = true;
             // 
             // rdbRespuesta3
@@ -305,10 +305,10 @@ namespace AppPreguntas.COMPETIDOR2
             this.rdbRespuesta3.ForeColor = System.Drawing.Color.White;
             this.rdbRespuesta3.Location = new System.Drawing.Point(56, 167);
             this.rdbRespuesta3.Name = "rdbRespuesta3";
-            this.rdbRespuesta3.Size = new System.Drawing.Size(108, 37);
+            this.rdbRespuesta3.Size = new System.Drawing.Size(166, 37);
             this.rdbRespuesta3.TabIndex = 29;
             this.rdbRespuesta3.TabStop = true;
-            this.rdbRespuesta3.Text = "1,000";
+            this.rdbRespuesta3.Text = "3 Angeles";
             this.rdbRespuesta3.UseVisualStyleBackColor = true;
             // 
             // rdbRespuesta2
@@ -318,10 +318,10 @@ namespace AppPreguntas.COMPETIDOR2
             this.rdbRespuesta2.ForeColor = System.Drawing.Color.White;
             this.rdbRespuesta2.Location = new System.Drawing.Point(395, 91);
             this.rdbRespuesta2.Name = "rdbRespuesta2";
-            this.rdbRespuesta2.Size = new System.Drawing.Size(124, 37);
+            this.rdbRespuesta2.Size = new System.Drawing.Size(135, 37);
             this.rdbRespuesta2.TabIndex = 28;
             this.rdbRespuesta2.TabStop = true;
-            this.rdbRespuesta2.Text = "10,000";
+            this.rdbRespuesta2.Text = "1 Angel";
             this.rdbRespuesta2.UseVisualStyleBackColor = true;
             // 
             // rdbRespuesta1
@@ -331,10 +331,10 @@ namespace AppPreguntas.COMPETIDOR2
             this.rdbRespuesta1.ForeColor = System.Drawing.Color.White;
             this.rdbRespuesta1.Location = new System.Drawing.Point(49, 91);
             this.rdbRespuesta1.Name = "rdbRespuesta1";
-            this.rdbRespuesta1.Size = new System.Drawing.Size(124, 37);
+            this.rdbRespuesta1.Size = new System.Drawing.Size(166, 37);
             this.rdbRespuesta1.TabIndex = 27;
             this.rdbRespuesta1.TabStop = true;
-            this.rdbRespuesta1.Text = "12,000";
+            this.rdbRespuesta1.Text = "2 Angeles";
             this.rdbRespuesta1.UseVisualStyleBackColor = true;
             // 
             // label10
@@ -342,11 +342,11 @@ namespace AppPreguntas.COMPETIDOR2
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(87, 7);
+            this.label10.Location = new System.Drawing.Point(53, 13);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(354, 56);
+            this.label10.Size = new System.Drawing.Size(421, 28);
             this.label10.TabIndex = 26;
-            this.label10.Text = "Cuantos Filisteos Mato Samson\r\ncon la Quijada de un Burro?";
+            this.label10.Text = "Cuantos Angeles Llegaron a Sodoma?";
             // 
             // lblIncorrecto
             // 
@@ -368,7 +368,7 @@ namespace AppPreguntas.COMPETIDOR2
             this.btnSiguientePregunta.Name = "btnSiguientePregunta";
             this.btnSiguientePregunta.Size = new System.Drawing.Size(227, 37);
             this.btnSiguientePregunta.TabIndex = 18;
-            this.btnSiguientePregunta.Text = "Siguiente Pregunta";
+            this.btnSiguientePregunta.Text = "Fin";
             this.btnSiguientePregunta.UseVisualStyleBackColor = false;
             this.btnSiguientePregunta.Click += new System.EventHandler(this.btnSiguientePregunta_Click);
             // 
@@ -384,6 +384,7 @@ namespace AppPreguntas.COMPETIDOR2
             this.ComprobarRes1.TabIndex = 15;
             this.ComprobarRes1.Text = "Verificar Respuesta";
             this.ComprobarRes1.UseVisualStyleBackColor = false;
+            this.ComprobarRes1.Click += new System.EventHandler(this.ComprobarRes1_Click);
             // 
             // lblCorrecto
             // 

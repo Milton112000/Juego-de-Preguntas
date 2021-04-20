@@ -192,8 +192,8 @@ namespace AppPreguntas.COMPETIDOR2
         {
             counter++;
             rdbRespuesta1.Visible = false;
-            rdbRespuesta2.Visible = false;
-            rdbRespuesta4.BackColor = Color.Green;
+            rdbRespuesta4.Visible = false;
+            rdbRespuesta2.BackColor = Color.Green;
             rdbRespuesta3.BackColor = Color.Green;
             btn50a50.Enabled = false;
             btn50a50.BackColor = Color.Black;

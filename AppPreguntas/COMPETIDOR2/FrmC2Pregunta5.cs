@@ -86,7 +86,7 @@ namespace AppPreguntas.COMPETIDOR2
         }
         public void cambiarCuenta()
         {
-            if (rdbRespuesta2.Checked == true)
+            if (rdbRespuesta1.Checked == true)
             {
                 txtTotal.Text = "3.00";
 
@@ -98,7 +98,7 @@ namespace AppPreguntas.COMPETIDOR2
         }
         public void Perdio()
         {
-            if (rdbRespuesta2.Checked == true)
+            if (rdbRespuesta1.Checked == true)
             {
 
             }
@@ -209,17 +209,17 @@ namespace AppPreguntas.COMPETIDOR2
 
         private void btn50a50_Click(object sender, EventArgs e)
         {
-            rdbRespuesta1.Visible = false;
-            rdbRespuesta4.Visible = false;
-            rdbRespuesta2.BackColor = Color.Green;
-            rdbRespuesta3.BackColor = Color.Green;
+            rdbRespuesta2.Visible = false;
+            rdbRespuesta3.Visible = false;
+            rdbRespuesta1.BackColor = Color.Green;
+            rdbRespuesta4.BackColor = Color.Green;
             btn50a50.Enabled = false;
             btn50a50.BackColor = Color.Black;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (rdbRespuesta2.Checked == true)
+            if (rdbRespuesta1.Checked == true)
             {
                 MessageBox.Show("Usted Se lleva a su casa $3.00");
                 this.Dispose();
@@ -249,6 +249,27 @@ namespace AppPreguntas.COMPETIDOR2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ComprobarRes1_Click(object sender, EventArgs e)
+        {
+            cambiarCuenta();
+            if (rdbRespuesta1.Checked == true)
+            {
+                lblCorrecto.Visible = true;
+                lblIncorrecto.Visible = false;
+                btnSiguientePregunta.Visible = true;
+            }
+            else
+            {
+                lblCorrecto.Visible = false;
+                lblIncorrecto.Visible = true;
+                btnSiguientePregunta.Visible = false;
+
+            }
+            timer1.Stop();
+            Perdio();
+            MessageBox.Show("Felicidades has Ganado: $3.00 dolares  ");
         }
     }
 }
