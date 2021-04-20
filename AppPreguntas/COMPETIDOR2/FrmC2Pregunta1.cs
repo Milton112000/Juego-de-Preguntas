@@ -165,34 +165,37 @@ namespace AppPreguntas.COMPETIDOR2
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
+            
+                if (btnIniciar.Text == "Iniciar")
+                {
+                    timer1.Start();
+                    panelPregunta.Visible = true;
+                    btnIniciar.ForeColor = Color.Firebrick;
+                    btnPausar.Enabled = true;
+                    horas = cbHoras.SelectedIndex;
+                    min = cbMinutos.SelectedIndex;
+                    segun = cbSegundos.SelectedIndex;
+                    btnIniciar.Text = "Restablecer";
 
-            if (btnIniciar.Text == "Iniciar")
-            {
-                timer1.Start();
-                panelPregunta.Visible = true;
-                btnIniciar.ForeColor = Color.Firebrick;
-                btnPausar.Enabled = true;
-                horas = cbHoras.SelectedIndex;
-                min = cbMinutos.SelectedIndex;
-                segun = cbSegundos.SelectedIndex;
-                btnIniciar.Text = "Restablecer";
 
+                }
+                else
+                {
+                    timer1.Stop();
+                    horas = 0;
+                    min = 0;
+                    segun = 0;
+                    lblTiempo.Text = "00.00.00";
+                    btnIniciar.ForeColor = Color.ForestGreen;
+                    btnPausar.Enabled = false;
+                    btnPausar.ForeColor = Color.RoyalBlue;
+                    btnPausar.Text = "Pausar";
+                    btnIniciar.Text = "Iniciar";
 
-            }
-            else
-            {
-                timer1.Stop();
-                horas = 0;
-                min = 0;
-                segun = 0;
-                lblTiempo.Text = "00.00.00";
-                btnIniciar.ForeColor = Color.ForestGreen;
-                btnPausar.Enabled = false;
-                btnPausar.ForeColor = Color.RoyalBlue;
-                btnPausar.Text = "Pausar";
-                btnIniciar.Text = "Iniciar";
-
-            }
+                }
+           
+           
+           
         }
 
         private void btnPausar_Click(object sender, EventArgs e)
