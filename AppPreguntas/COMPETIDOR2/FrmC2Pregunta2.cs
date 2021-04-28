@@ -16,6 +16,7 @@ namespace AppPreguntas.COMPETIDOR2
         public FrmC2Pregunta2()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         public int counterFor2 = 0;
         public int recibirClik;

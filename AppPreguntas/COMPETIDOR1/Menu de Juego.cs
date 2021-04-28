@@ -298,7 +298,9 @@ namespace AppPreguntas
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
+            Usuario1 usuario = new Usuario1();
+            usuario.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

@@ -33,7 +33,6 @@ namespace AppPreguntas.COMPETIDOR1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPregunta4));
             this.lblUsuarioActual = new System.Windows.Forms.Label();
             this.panelTemporizador = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.btnPausar = new System.Windows.Forms.Button();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.lblTiempo = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.panel4 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panelTemporizador.SuspendLayout();
             this.panelPregunta.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -86,6 +86,7 @@ namespace AppPreguntas.COMPETIDOR1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUsuarioActual
@@ -103,7 +104,7 @@ namespace AppPreguntas.COMPETIDOR1
             // panelTemporizador
             // 
             this.panelTemporizador.BackColor = System.Drawing.Color.Blue;
-            this.panelTemporizador.Controls.Add(this.label13);
+            this.panelTemporizador.Controls.Add(this.pictureBox4);
             this.panelTemporizador.Controls.Add(this.btnPausar);
             this.panelTemporizador.Controls.Add(this.btnIniciar);
             this.panelTemporizador.Controls.Add(this.lblTiempo);
@@ -118,22 +119,12 @@ namespace AppPreguntas.COMPETIDOR1
             this.panelTemporizador.Size = new System.Drawing.Size(507, 378);
             this.panelTemporizador.TabIndex = 43;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Yellow;
-            this.label13.Location = new System.Drawing.Point(185, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 22);
-            this.label13.TabIndex = 53;
-            this.label13.Text = "Temporizador";
-            // 
             // btnPausar
             // 
+            this.btnPausar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPausar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPausar.ForeColor = System.Drawing.Color.Blue;
-            this.btnPausar.Location = new System.Drawing.Point(295, 281);
+            this.btnPausar.Location = new System.Drawing.Point(316, 308);
             this.btnPausar.Name = "btnPausar";
             this.btnPausar.Size = new System.Drawing.Size(161, 52);
             this.btnPausar.TabIndex = 52;
@@ -143,8 +134,9 @@ namespace AppPreguntas.COMPETIDOR1
             // 
             // btnIniciar
             // 
+            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciar.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnIniciar.Location = new System.Drawing.Point(34, 281);
+            this.btnIniciar.Location = new System.Drawing.Point(33, 308);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(161, 52);
             this.btnIniciar.TabIndex = 51;
@@ -157,7 +149,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTiempo.ForeColor = System.Drawing.Color.Red;
-            this.lblTiempo.Location = new System.Drawing.Point(97, 155);
+            this.lblTiempo.Location = new System.Drawing.Point(110, 202);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(317, 85);
             this.lblTiempo.TabIndex = 50;
@@ -168,7 +160,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(380, 54);
+            this.label14.Location = new System.Drawing.Point(380, 107);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 23);
             this.label14.TabIndex = 49;
@@ -179,7 +171,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(232, 54);
+            this.label15.Location = new System.Drawing.Point(213, 107);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(78, 23);
             this.label15.TabIndex = 48;
@@ -190,7 +182,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(86, 54);
+            this.label16.Location = new System.Drawing.Point(42, 107);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(62, 23);
             this.label16.TabIndex = 47;
@@ -200,7 +192,7 @@ namespace AppPreguntas.COMPETIDOR1
             // 
             this.cbSegundos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSegundos.FormattingEnabled = true;
-            this.cbSegundos.Location = new System.Drawing.Point(363, 80);
+            this.cbSegundos.Location = new System.Drawing.Point(370, 133);
             this.cbSegundos.Name = "cbSegundos";
             this.cbSegundos.Size = new System.Drawing.Size(121, 28);
             this.cbSegundos.TabIndex = 46;
@@ -209,7 +201,7 @@ namespace AppPreguntas.COMPETIDOR1
             // 
             this.cbMinutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMinutos.FormattingEnabled = true;
-            this.cbMinutos.Location = new System.Drawing.Point(213, 80);
+            this.cbMinutos.Location = new System.Drawing.Point(189, 133);
             this.cbMinutos.Name = "cbMinutos";
             this.cbMinutos.Size = new System.Drawing.Size(121, 28);
             this.cbMinutos.TabIndex = 45;
@@ -218,7 +210,7 @@ namespace AppPreguntas.COMPETIDOR1
             // 
             this.cbHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHoras.FormattingEnabled = true;
-            this.cbHoras.Location = new System.Drawing.Point(60, 80);
+            this.cbHoras.Location = new System.Drawing.Point(16, 133);
             this.cbHoras.Name = "cbHoras";
             this.cbHoras.Size = new System.Drawing.Size(121, 28);
             this.cbHoras.TabIndex = 44;
@@ -372,6 +364,7 @@ namespace AppPreguntas.COMPETIDOR1
             // btnSiguientePregunta
             // 
             this.btnSiguientePregunta.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnSiguientePregunta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguientePregunta.ForeColor = System.Drawing.Color.White;
             this.btnSiguientePregunta.Location = new System.Drawing.Point(146, 308);
             this.btnSiguientePregunta.Name = "btnSiguientePregunta";
@@ -385,6 +378,7 @@ namespace AppPreguntas.COMPETIDOR1
             // 
             this.ComprobarRes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ComprobarRes1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ComprobarRes1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComprobarRes1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComprobarRes1.Location = new System.Drawing.Point(161, 228);
             this.ComprobarRes1.Name = "ComprobarRes1";
@@ -437,6 +431,7 @@ namespace AppPreguntas.COMPETIDOR1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn50a50.BackColor = System.Drawing.Color.Red;
+            this.btn50a50.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn50a50.Location = new System.Drawing.Point(536, 186);
             this.btn50a50.Name = "btn50a50";
             this.btn50a50.Size = new System.Drawing.Size(196, 66);
@@ -464,6 +459,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(536, 125);
             this.button3.Name = "button3";
@@ -641,7 +637,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(100, 21);
             this.label1.TabIndex = 32;
-            this.label1.Text = "Pregunta 2";
+            this.label1.Text = "Pregunta 4";
             // 
             // panel4
             // 
@@ -674,6 +670,17 @@ namespace AppPreguntas.COMPETIDOR1
             this.pictureBox5.TabIndex = 0;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(167, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(158, 104);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 55;
+            this.pictureBox4.TabStop = false;
+            // 
             // FrmPregunta4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -687,6 +694,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPregunta4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPregunta4";
             this.Load += new System.EventHandler(this.FrmPregunta4_Load);
             this.panelTemporizador.ResumeLayout(false);
@@ -703,6 +711,7 @@ namespace AppPreguntas.COMPETIDOR1
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -711,7 +720,6 @@ namespace AppPreguntas.COMPETIDOR1
 
         public System.Windows.Forms.Label lblUsuarioActual;
         private System.Windows.Forms.Panel panelTemporizador;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnPausar;
         private System.Windows.Forms.Button btnIniciar;
         private System.Windows.Forms.Label lblTiempo;
@@ -755,5 +763,6 @@ namespace AppPreguntas.COMPETIDOR1
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

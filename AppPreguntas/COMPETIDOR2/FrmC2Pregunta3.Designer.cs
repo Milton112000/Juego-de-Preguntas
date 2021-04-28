@@ -342,11 +342,11 @@ namespace AppPreguntas.COMPETIDOR2
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(6, 0);
+            this.label10.Location = new System.Drawing.Point(63, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(532, 56);
+            this.label10.Size = new System.Drawing.Size(423, 56);
             this.label10.TabIndex = 26;
-            this.label10.Text = "Cual es el Capitulo mas Largo que se encuentra\r\n en la biblia ?";
+            this.label10.Text = "Cual es el Capitulo mas Largo que se \r\n         encuentra en la biblia ?";
             // 
             // lblIncorrecto
             // 

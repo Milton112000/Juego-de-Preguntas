@@ -58,7 +58,6 @@ namespace AppPreguntas
             this.label10 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelTemporizador = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.btnPausar = new System.Windows.Forms.Button();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.lblTiempo = new System.Windows.Forms.Label();
@@ -77,6 +76,7 @@ namespace AppPreguntas
             this.panel3 = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panelPregunta.SuspendLayout();
             this.panelTemporizador.SuspendLayout();
@@ -86,6 +86,7 @@ namespace AppPreguntas
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -202,6 +203,7 @@ namespace AppPreguntas
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn50a50.BackColor = System.Drawing.Color.Red;
+            this.btn50a50.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn50a50.Location = new System.Drawing.Point(536, 183);
             this.btn50a50.Name = "btn50a50";
             this.btn50a50.Size = new System.Drawing.Size(202, 69);
@@ -230,6 +232,7 @@ namespace AppPreguntas
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(536, 125);
             this.button3.Name = "button3";
@@ -259,6 +262,7 @@ namespace AppPreguntas
             // 
             this.ComprobarRes1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ComprobarRes1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ComprobarRes1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ComprobarRes1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComprobarRes1.Location = new System.Drawing.Point(161, 217);
             this.ComprobarRes1.Name = "ComprobarRes1";
@@ -299,6 +303,7 @@ namespace AppPreguntas
             // btnSiguientePregunta
             // 
             this.btnSiguientePregunta.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnSiguientePregunta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSiguientePregunta.ForeColor = System.Drawing.Color.White;
             this.btnSiguientePregunta.Location = new System.Drawing.Point(146, 308);
             this.btnSiguientePregunta.Name = "btnSiguientePregunta";
@@ -452,7 +457,7 @@ namespace AppPreguntas
             // panelTemporizador
             // 
             this.panelTemporizador.BackColor = System.Drawing.Color.Blue;
-            this.panelTemporizador.Controls.Add(this.label13);
+            this.panelTemporizador.Controls.Add(this.pictureBox5);
             this.panelTemporizador.Controls.Add(this.btnPausar);
             this.panelTemporizador.Controls.Add(this.btnIniciar);
             this.panelTemporizador.Controls.Add(this.lblTiempo);
@@ -468,22 +473,12 @@ namespace AppPreguntas
             this.panelTemporizador.Size = new System.Drawing.Size(479, 378);
             this.panelTemporizador.TabIndex = 22;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Yellow;
-            this.label13.Location = new System.Drawing.Point(230, 16);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(106, 22);
-            this.label13.TabIndex = 53;
-            this.label13.Text = "Temporizador";
-            // 
             // btnPausar
             // 
+            this.btnPausar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPausar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPausar.ForeColor = System.Drawing.Color.Blue;
-            this.btnPausar.Location = new System.Drawing.Point(295, 276);
+            this.btnPausar.Location = new System.Drawing.Point(304, 308);
             this.btnPausar.Name = "btnPausar";
             this.btnPausar.Size = new System.Drawing.Size(161, 52);
             this.btnPausar.TabIndex = 52;
@@ -493,8 +488,9 @@ namespace AppPreguntas
             // 
             // btnIniciar
             // 
+            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIniciar.ForeColor = System.Drawing.Color.ForestGreen;
-            this.btnIniciar.Location = new System.Drawing.Point(62, 276);
+            this.btnIniciar.Location = new System.Drawing.Point(62, 308);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(161, 52);
             this.btnIniciar.TabIndex = 51;
@@ -507,7 +503,7 @@ namespace AppPreguntas
             this.lblTiempo.AutoSize = true;
             this.lblTiempo.Font = new System.Drawing.Font("Arial Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTiempo.ForeColor = System.Drawing.Color.Red;
-            this.lblTiempo.Location = new System.Drawing.Point(102, 162);
+            this.lblTiempo.Location = new System.Drawing.Point(100, 203);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(317, 85);
             this.lblTiempo.TabIndex = 50;
@@ -518,7 +514,7 @@ namespace AppPreguntas
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(359, 66);
+            this.label14.Location = new System.Drawing.Point(368, 105);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(97, 23);
             this.label14.TabIndex = 49;
@@ -529,7 +525,7 @@ namespace AppPreguntas
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(230, 66);
+            this.label15.Location = new System.Drawing.Point(211, 105);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(78, 23);
             this.label15.TabIndex = 48;
@@ -540,7 +536,7 @@ namespace AppPreguntas
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(86, 66);
+            this.label16.Location = new System.Drawing.Point(46, 105);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(62, 23);
             this.label16.TabIndex = 47;
@@ -550,7 +546,7 @@ namespace AppPreguntas
             // 
             this.cbSegundos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSegundos.FormattingEnabled = true;
-            this.cbSegundos.Location = new System.Drawing.Point(347, 96);
+            this.cbSegundos.Location = new System.Drawing.Point(358, 148);
             this.cbSegundos.Name = "cbSegundos";
             this.cbSegundos.Size = new System.Drawing.Size(121, 28);
             this.cbSegundos.TabIndex = 46;
@@ -559,7 +555,7 @@ namespace AppPreguntas
             // 
             this.cbMinutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMinutos.FormattingEnabled = true;
-            this.cbMinutos.Location = new System.Drawing.Point(206, 98);
+            this.cbMinutos.Location = new System.Drawing.Point(187, 148);
             this.cbMinutos.Name = "cbMinutos";
             this.cbMinutos.Size = new System.Drawing.Size(121, 28);
             this.cbMinutos.TabIndex = 45;
@@ -568,7 +564,7 @@ namespace AppPreguntas
             // 
             this.cbHoras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHoras.FormattingEnabled = true;
-            this.cbHoras.Location = new System.Drawing.Point(62, 97);
+            this.cbHoras.Location = new System.Drawing.Point(21, 148);
             this.cbHoras.Name = "cbHoras";
             this.cbHoras.Size = new System.Drawing.Size(121, 28);
             this.cbHoras.TabIndex = 44;
@@ -610,10 +606,10 @@ namespace AppPreguntas
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(948, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(938, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(58, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -624,10 +620,10 @@ namespace AppPreguntas
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1002, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(994, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(62, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -678,6 +674,17 @@ namespace AppPreguntas
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(187, -3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(158, 104);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 55;
+            this.pictureBox5.TabStop = false;
+            // 
             // Menu_de_Juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -692,6 +699,7 @@ namespace AppPreguntas
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "Menu_de_Juego";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_de_Juego";
             this.Load += new System.EventHandler(this.Menu_de_Juego_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Menu_de_Juego_MouseClick);
@@ -709,6 +717,7 @@ namespace AppPreguntas
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -749,7 +758,6 @@ namespace AppPreguntas
         private System.Windows.Forms.ComboBox cbSegundos;
         private System.Windows.Forms.ComboBox cbMinutos;
         private System.Windows.Forms.ComboBox cbHoras;
-        private System.Windows.Forms.Label label13;
         public System.Windows.Forms.Label lblUsuarioActual;
         public System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Panel panel2;
@@ -760,5 +768,6 @@ namespace AppPreguntas
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
